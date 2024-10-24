@@ -1,7 +1,7 @@
 const yesBtn = document.getElementById("yesBtn");
 const noBtn = document.getElementById("noBtn");
 
-noBtn.addEventListener("mouseenter", () => {
+noBtn.addEventListener("click", () => {
     // Swap the positions of Yes and No buttons
     const yesPosition = yesBtn.getBoundingClientRect();
     const noPosition = noBtn.getBoundingClientRect();
