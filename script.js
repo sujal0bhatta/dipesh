@@ -16,6 +16,9 @@ noBtn.addEventListener("click", () => {
     noBtn.style.top = yesPosition.top + "px";
 });
 
-yesBtn.addEventListener("click", () => {
+yesBtn.addEventListener("click", (event) => {
+    // Prevent default behavior and event propagation
+    event.preventDefault();
+    event.stopPropagation();
     alert("Yay! Thank you for saying Yes! I Love You So Muchhhhhhhhh");
 });
