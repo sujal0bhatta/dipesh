@@ -1,7 +1,7 @@
 const yesBtn = document.getElementById("yesBtn");
 const noBtn = document.getElementById("noBtn");
 
-noBtn.addEventListener("click", () => {
+noBtn.addEventListener("click", (event) => {
     // Swap the positions of Yes and No buttons
     const yesPosition = yesBtn.getBoundingClientRect();
     const noPosition = noBtn.getBoundingClientRect();
@@ -14,11 +14,11 @@ noBtn.addEventListener("click", () => {
 
     noBtn.style.left = yesPosition.left + "px";
     noBtn.style.top = yesPosition.top + "px";
+    
+    // Prevent the event from triggering the Yes button's event
+    event.stopPropagation();
 });
 
-yesBtn.addEventListener("click", (event) => {
-    // Prevent default behavior and event propagation
-    event.preventDefault();
-    event.stopPropagation();
+yesBtn.addEventListener("click", () => {
     alert("Yay! Thank you for saying Yes! I Love You So Muchhhhhhhhh");
 });
