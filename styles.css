@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f8ff;
+    padding-top: 100px;
+}
+
+h1 {
+    color: #333;
+}
+
+.button-container {
+    margin-top: 50px;
+}
+
+.btn {
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    border: 2px solid #555;
+    border-radius: 5px;
+    background-color: #eee;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+    background-color: #ddd;
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
